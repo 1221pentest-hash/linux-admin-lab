@@ -1,213 +1,232 @@
-# Enterprise Systems Administration Lab
+# 🏢 Enterprise Systems Administration Lab
 
 ## Overview
 
-This repository documents the design, deployment, administration, and troubleshooting of a multi-platform enterprise lab environment built in VMware Workstation.
+This repository documents the design, deployment, administration, and troubleshooting of a multi-platform enterprise lab built using **VMware Workstation**.
 
-The objective of this project is to develop and demonstrate practical skills used by IT Support Technicians, Desktop Support Specialists, System Administrators, and Infrastructure Analysts in a business environment.
+The project simulates the IT infrastructure of a small business and demonstrates practical skills used by **Help Desk Technicians, IT Support Specialists, Desktop Support Technicians, and Junior Systems Administrators**.
 
-The lab simulates a small organization with centralized identity management, Windows and Linux servers, workstation administration, network services, file sharing, security controls, and system troubleshooting.
+The environment includes **Windows Server 2019**, **Windows 11**, **Ubuntu Server 24.04**, and **Rocky Linux 9**, with a focus on Active Directory administration, Windows infrastructure, Linux administration, networking, and technical documentation.
 
 ---
 
-## Infrastructure
+# Lab Objectives
 
-### Virtualization Platform
+* Build an enterprise Active Directory environment
+* Configure Windows Server infrastructure
+* Implement Role-Based Access Control (RBAC)
+* Configure DNS and DHCP
+* Create shared folders and NTFS permissions
+* Join Windows clients to the domain
+* Administer Ubuntu Server
+* Administer Rocky Linux
+* Document every implementation with screenshots and technical notes
 
-* VMware Workstation
+---
 
-### Windows Environment
+# Infrastructure
 
-* Windows Server 2022
-* Active Directory Domain Services (AD DS)
-* DNS
-* DHCP
+## Virtualization
+
+* VMware Workstation Pro
+
+## Windows Environment
+
+* Windows Server 2019
+* Active Directory Domain Services
+* DNS Server
+* DHCP Server
 * Group Policy Management
 * File Services
+* Windows 11 Enterprise Client
 
-### Linux Environment
+## Linux Environment
 
 * Ubuntu Server 24.04
 * Rocky Linux 9
-* OpenSSH
-* Apache Web Server
-* Nginx Web Server
-* Systemd Service Management
-
-### Client Environment
-
-* Windows 10 Enterprise
-* Domain Authentication
-* User Testing
-* Policy Validation
 
 ---
 
-## Domain Information
+# Enterprise Skills Demonstrated
 
-```text
-Domain Name: LORO.local
+## Windows Server
 
-Domain Controller: DC-01
-
-Server IP: 192.168.50.10
-```
-
----
-
-## Active Directory Administration
-
-### Identity Management
-
-* User Account Creation
-* Password Management
-* Account Lockout Management
-* Group Administration
-* Organizational Unit Administration
-
-### Infrastructure Services
-
+* Active Directory Administration
+* Organizational Unit (OU) Design
+* User & Group Administration
+* Role-Based Access Control (RBAC)
 * DNS Administration
 * DHCP Administration
-* File Sharing
 * Group Policy Management
-
-### Security Controls
-
-* Password Policies
-* Account Lockout Policies
-* Administrative Delegation
-* Access Control
-
----
+* NTFS Permissions
+* Shared Folder Administration
+* Windows Server Management
+* Windows 11 Domain Administration
 
 ## Linux Administration
 
-### User and Group Administration
-
-* User Creation
-* Group Creation
-* Group Membership Management
-* Privilege Delegation
-
-### File System Administration
-
-* Ownership Management
-* Access Control
+* User and Group Management
+* SSH Administration
+* Apache Web Server
+* Nginx Web Server
 * File Permissions
-* Shared Directories
-
-### Service Management
-
-* Systemd
-* Service Monitoring
-* Service Recovery
-* Startup Configuration
-
-### Remote Administration
-
-* SSH Configuration
-* Secure Remote Access
-* Key-Based Authentication
-
----
+* System Services
+* Log Analysis
+* Basic Security Hardening
 
 ## Networking
 
-### Core Services
-
-* TCP/IP
+* TCP/IP Configuration
 * DNS Resolution
-* DHCP
-* Routing Verification
-
-### Troubleshooting
-
-* Connectivity Testing
-* Name Resolution Testing
-* Service Verification
-* Log Analysis
-
----
-
-## Project Documentation
-
-### Active Directory
-
-* Server Audit
-* OU Structure
-* User Management
-* Group Management
-* DNS Configuration
 * DHCP Configuration
-* Group Policy Configuration
-
-### Ubuntu Server
-
-* User Administration
-* SSH Administration
-* Apache Administration
-* Permissions Management
-* Troubleshooting
-
-### Rocky Linux
-
-* User Administration
-* DNF Package Management
-* Nginx Administration
-* Log Analysis
-* Troubleshooting
-
----
-
-## Skills Demonstrated
-
-### IT Support
-
-* Technical Troubleshooting
-* User Support
-* Account Administration
-* Documentation
-* Incident Resolution
-
-### Windows Administration
-
-* Active Directory
-* DNS
-* DHCP
-* Group Policy
-* File Services
-
-### Linux Administration
-
-* Ubuntu
-* Rocky Linux
-* SSH
-* Apache
-* Nginx
-* Systemd
-
-### Networking
-
-* TCP/IP
-* DNS
-* DHCP
 * Network Troubleshooting
 
 ---
 
-## Certifications
+# Repository Structure
 
-* CompTIA Security+
-* Fortinet NSE 3
-* Cisco CCNA (In Progress)
+```text
+Enterprise-System-Administration-Lab
+│
+├── Active-Directory
+├── Documentation
+├── Ubuntu
+├── Rocky-Linux
+├── Screenshots
+└── README.md
+```
 
 ---
 
-## Author
+# Active Directory Project
 
-Israel Loyo
+## Completed
 
-IT Support | Desktop Support | System Administration
+* Domain Health Assessment
+* Forest Verification
+* FSMO Role Verification
+* Enterprise OU Structure
+* Department Organizational Units
+* Security Groups
+* Enterprise User Accounts
+* Role-Based Access Control (RBAC)
 
-Montreal, Quebec
+## In Progress
+
+* File Server
+* NTFS Permissions
+* DHCP Configuration
+* Group Policy
+* Password Policies
+* Windows 11 Administration
+
+---
+
+# Active Directory Screenshots
+
+## Domain Controller Health
+
+![DCDIAG](Screenshots/Active-Directory/01-dcdiag.png)
+
+---
+
+## IP Configuration
+
+![IPCONFIG](Screenshots/Active-Directory/02-ipconfig.png)
+
+---
+
+## Active Directory Domain
+
+![AD Domain](Screenshots/Active-Directory/03-Get-ADDomain.png)
+
+---
+
+## Active Directory Forest
+
+![Forest](Screenshots/Active-Directory/04-Get-ADForest.png)
+
+---
+
+## FSMO Roles
+
+![FSMO](Screenshots/Active-Directory/05-Netdom-FSMO.png)
+
+---
+
+## Enterprise OU Structure
+
+![OU Structure](Screenshots/Active-Directory/06-OU-Structure.png)
+
+---
+
+## Security Groups
+
+![Security Groups](Screenshots/Active-Directory/07-Global-Groups.png)
+
+---
+
+## IT Department
+
+![IT Users](Screenshots/Active-Directory/08-IT-Group-Members.png)
+
+---
+
+## Human Resources
+
+![HR Users](Screenshots/Active-Directory/09-HR-Group-Members.png)
+
+---
+
+## Finance Department
+
+![Finance Users](Screenshots/Active-Directory/10-Finance-Group-Members.png)
+
+---
+
+## Enterprise File Server
+
+![Department Folders](Screenshots/Active-Directory/11-Department-Folders.png)
+
+---
+
+# Technologies Used
+
+* Windows Server 2019
+* Windows 11
+* Ubuntu Server 24.04
+* Rocky Linux 9
+* Active Directory
+* DNS
+* DHCP
+* Group Policy
+* VMware Workstation
+* PowerShell
+* Git
+* GitHub
+* Visual Studio Code
+
+---
+
+# Future Enhancements
+
+* Windows Deployment Services (WDS)
+* WSUS
+* File Server Resource Manager (FSRM)
+* Print Services
+* DFS Namespace
+* Certificate Services (AD CS)
+* Linux Automation with Bash
+* PowerShell Automation
+* Monitoring and Logging
+* Backup and Recovery
+
+---
+
+# Author
+
+**Israel Loyo**
+
+* CompTIA Security+
+* Cisco CCNA Candidate
+* IT Support | Desktop Support | Systems Administration
